@@ -1,0 +1,9 @@
+name: Log Clones
+on: [push, pull_request]
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report clone
+        run: echo "Repo cloned in CI at $(date)"
